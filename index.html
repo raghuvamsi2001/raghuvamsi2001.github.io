@@ -1,205 +1,105 @@
-<link
-  rel="stylesheet"
-  href="disco.css"
->
-<link
-  href="poppins.css"
-  rel="stylesheet"
-/>
-<link
-  href="raleway.css"
-  rel="stylesheet"
-/>
-<!-- START NAV -->
+<!DOCTYPE html>
+<html lang="en">
 
-<nav id="navbar" class="nav">
-  <ul class="nav-list">
-    <li>
-      <a href="#welcome-section">About</a>
-    </li>
-    <li>
-      <a href="#projects">Work</a>
-    </li>
-    <li>
-      <a href="#contact">Contact</a>
-    </li>
-  </ul>
-</nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raghu Vamsi | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<!-- END NAV -->
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      color: #333;
+      line-height: 1.6;
+    }
 
-<!-- START WELCOME SECTION -->
+    header {
+      background-color: #ffffffaa;
+      backdrop-filter: blur(10px);
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-<section id="welcome-section" class="welcome-section">
-  <h1>Hey, I am Raghu Vamsi</h1>
-  <p>a tech enthusiast</p>
-</section>
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #2c3e50;
+    }
 
-<!-- END WELCOME SECTION -->
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
 
-<!-- START PROJECTS SECTION -->
+    section {
+      margin-bottom: 3rem;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
 
-<section id="projects" class="projects-section">
-  <h2 class="projects-section-header">These are some of my projects</h2>
+    section h2 {
+      font-size: 1.8rem;
+      color: #2980b9;
+      margin-bottom: 1rem;
+    }
 
-  <div class="projects-grid">
-    <a
-      href="https://github.com/raghuvamsi2001/mask_detector"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="https://res.cloudinary.com/practicaldev/image/fetch/s--1u3Uz9sp--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/ojmek5e5tihf1p655ju6.png"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Face Mask Detector
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a>
-    <a
-      href="https://github.com/raghuvamsi2001/Random_Quote_generator"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1620373273308/WsJWtYo7f.png?auto=compress,format&format=webp"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Random Quote Machine
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a>
-    <!--<a
-      href="https://codepen.io/freeCodeCamp/full/wgGVVX"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        JavaScript Calculator
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a>
-    <a
-      href="https://codepen.io/freeCodeCamp/full/mVEJag"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Map Data Across the Globe
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a>
-    <a
-      href="https://codepen.io/freeCodeCamp/full/wGqEga"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Wikipedia Viewer
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a>
-    <a
-      href="https://codepen.io/freeCodeCamp/full/KzXQgy"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Tic Tac Toe Game
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a>-->
-  </div>
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2c3e50;
+      color: #fff;
+      font-size: 0.9rem;
+    }
 
-  <a
-    href="https://github.com/raghuvamsi2001?tab=repositories"
-    class="btn btn-show-all"
-    target="_blank"
-    >Show all<i class="fas fa-chevron-right"></i
-  ></a>
-</section>
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
 
-<!-- END PROJECTS SECTION -->
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
 
-<!-- START CONTACT SECTION -->
+<body>
+  <header>
+    <h1>Raghu Vamsi</h1>
+  </header>
 
-<section id="contact" class="contact-section">
-  <div class="contact-section-header">
-    <h2>Let's work together...</h2>
-    <p>How do you take your coffee?</p>
-  </div>
-  <div class="contact-links">
-    
-    <a
-      href="https://www.instagram.com/raghu_vamsi_2001/"
-      target="_blank"
-      class="btn contact-details"
-      ><i class="fab fa-facebook-square"></i> Instagram</a
-    >
-    <a
-      id="profile-link"
-      href="https://github.com/raghuvamsi2001"
-      target="_blank"
-      class="btn contact-details"
-      ><i class="fab fa-github"></i> GitHub</a
-    >
-    <a
-      href="https://www.linkedin.com/in/raghuvamsi2001/"
-      target="_blank"
-      class="btn contact-details"
-      ><i class="fab fa-twitter"></i> Linkedin</a
-    >
-    <a href="mailto:raghumessi28@gmail.com" class="btn contact-details"
-      ><i class="fas fa-at"></i> Send a mail</a
-    >
-    <a href="tel:+917075353105" class="btn contact-details"
-      ><i class="fas fa-mobile-alt"></i> Call me</a
-    >
-  </div>
-</section>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>Hi! I'm Raghu Vamsi, A passionate software engineer with 2.5 years of experience at BSH, specializing in PLM customization and VMP development using Siemens Opcenter. Adept at handling both development and security management, with a strong focus on delivering tailored solutions across Bosch labs. Welcome to my digital space!</p>
+    </section>
 
-<!-- END CONTACT SECTION -->
+    <section>
+      <h2>Projects</h2>
+      <p>Check out my <a href="https://github.com/raghuvamsi2001" target="_blank">GitHub profile</a> for some of the cool stuff I've been working on.</p>
+    </section>
 
-<!-- START FOOTER SECTION -->
+    <section>
+      <h2>Contact</h2>
+      <p>You can reach me via email at <a href="mailto:raghumessi28@gmail.com">raghumessi28@gmail.com</a>.</p>
+    </section>
+  </main>
 
-<footer>
-  
-  <p>
-    &copy; Created By
-    <a href="https://www.linkedin.com/in/raghuvamsi2001/" target="_blank"
-      >RaghuVamsi <i class="fab fa-free-code-camp"></i
-    ></a>
-  </p>
-</footer>
+  <footer>
+    <p>&copy; 2025 Raghu Vamsi. All rights reserved.</p>
+  </footer>
+</body>
 
-<!-- END FOOTER SECTION -->
+</html>
